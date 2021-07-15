@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xrpdev.xrpgenerator.Controller">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account:" />
+      <TextField fx:id="tf_account" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="513.0" />
+      <Text layoutX="13.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matches:" />
+      <Button fx:id="btn_search" layoutX="534.0" layoutY="31.0" mnemonicParsing="false" text="Search" />
+      <TableView fx:id="tv_matches" layoutX="14.0" layoutY="97.0" prefHeight="285.0" prefWidth="576.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="95.0">
+        <columns>
+          <TableColumn fx:id="tc_address" prefWidth="275.0" text="Account Address" />
+          <TableColumn fx:id="tc_seed" minWidth="0.0" prefWidth="296.0" text="Family Seed" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="iv_code" fitHeight="161.0" fitWidth="191.0" layoutX="71.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
