@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xrpdev.xrpgenerator.Controller">
    <children>
-      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account:" />
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account: (the longer the harder it is gonna to find an account. Recommended between 1-6 characters)" />
       <TextField fx:id="tf_account" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="513.0" />
       <Text layoutX="13.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matches:" />
       <Button fx:id="btn_search" layoutX="534.0" layoutY="31.0" mnemonicParsing="false" text="Search" />
@@ -19,5 +19,6 @@
         </columns>
       </TableView>
       <ImageView fx:id="iv_code" fitHeight="161.0" fitWidth="191.0" layoutX="71.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="text_loading" layoutX="71.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loading..." />
    </children>
 </AnchorPane>
